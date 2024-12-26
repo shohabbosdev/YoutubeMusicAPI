@@ -3,7 +3,9 @@ import telebot
 from telebot.types import InlineKeyboardButton
 from telegram_bot_pagination import InlineKeyboardPaginator  
 from config import key, token
+from keep_alive import keep_alive
 
+keep_alive()
 bot = telebot.TeleBot(token, parse_mode='html')
 
 # Foydalanuvchi qidiruvlarini saqlash uchun dictionary
